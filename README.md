@@ -1,6 +1,6 @@
-## demo-angular-app
+# demo-angular-app
 
-- pre-reqs -
+## pre-reqs -
   1) Node.js and npm: Ensure you have Node.js installed (preferably the latest LTS version). npm (Node Package Manager) comes bundled with it. You can download it from nodejs.org.
         bash
 
@@ -20,7 +20,7 @@
 
 
 
-# Steps to Bootstrap an Angular Project
+## Steps to Bootstrap an Angular Project
 Create a New Angular Project
 Use the Angular CLI to generate a new project:
 
