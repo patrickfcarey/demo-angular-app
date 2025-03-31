@@ -1,101 +1,59 @@
-# demo-angular-app
+# DemoAngularApp
 
-## pre-reqs -
-  1) Node.js and npm: Ensure you have Node.js installed (preferably the latest LTS version). npm (Node Package Manager) comes bundled with it. You can download it from nodejs.org.
-        bash
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
-         node -v
-         npm -v
+## Development server
 
-  2) Angular CLI: Install the Angular Command Line Interface (CLI) globally to simplify project setup and management.
-    Run this command in your terminal:
-        bash
+To start a local development server, run:
 
-         npm install -g @angular/cli
+```bash
+ng serve
+```
 
-    Verify installation:
-        bash
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-         ng version
+## Code scaffolding
 
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
+```bash
+ng generate component component-name
+```
 
-## Steps to Bootstrap an Angular Project
-Create a New Angular Project
-Use the Angular CLI to generate a new project:
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-  bash
+```bash
+ng generate --help
+```
 
-    ng new my-angular-app
+## Building
 
-Replace my-angular-app with your desired project name.
+To build the project run:
 
-The CLI will prompt you with a few questions:
-Would you like to add Angular routing? (Yes/No) – Choose based on your needs.
+```bash
+ng build
+```
 
-Which stylesheet format would you like to use? (e.g., CSS, SCSS, etc.) – Pick your preference.
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-This command creates a folder (my-angular-app) with a basic Angular project structure.
+## Running unit tests
 
-Navigate to the Project Directory
-Move into your project folder:
-  
-  bash
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-    cd my-angular-app
+```bash
+ng test
+```
 
-Run the Application
-Start the development server:
-  
-  bash
+## Running end-to-end tests
 
-    ng serve
+For end-to-end (e2e) testing, run:
 
-Open your browser and go to http://localhost:4200/. You should see the default Angular welcome page.
+```bash
+ng e2e
+```
 
-Explore the Project Structure
-Key files and folders:
-src/app/app.module.ts: The root module where components, services, and dependencies are declared.
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-src/app/app.component.ts: The root component of your app.
+## Additional Resources
 
-src/index.html: The main HTML file where Angular bootstraps.
-
-src/main.ts: The entry point that bootstraps the app module.
-
-Customize the Bootstrap Process (Optional)
-Angular’s bootstrapping happens in main.ts. By default, it looks like this:
-typescript
-
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app/app.module';
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
-
-You can modify this if you need custom bootstrapping logic (e.g., dynamic environment loading).
-
-Add Dependencies (Optional)
-Install additional libraries (e.g., Bootstrap for styling):
-
-  bash
-
-    npm install bootstrap
-
-Include it in your project by adding it to angular.json under "styles":
-json
-
-"styles": [
-  "node_modules/bootstrap/dist/css/bootstrap.min.css",
-  "src/styles.css"
-]
-
-Build and Deploy (When Ready)
-To create a production build:
-
-  bash
-
-    ng build --prod
-
-The output will be in the dist/ folder, ready to deploy to a web server.
-
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
