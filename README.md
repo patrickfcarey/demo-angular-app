@@ -26,12 +26,7 @@ For a complete list of available schematics (such as `components`, `directives`,
 ng generate --help
 ```
 
-<<<<<<< HEAD
 ## Building
-=======
-    ng new demo-angular-app --directory .
-    
->>>>>>> origin/main
 
 To build the project run:
 
