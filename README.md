@@ -26,7 +26,8 @@ Use the Angular CLI to generate a new project:
 
   bash
 
-    ng new my-angular-app
+    ng new demo-angular-app --directory .
+    
 
 Replace my-angular-app with your desired project name.
 
