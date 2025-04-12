@@ -8,5 +8,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'demo-angular-app';
+   value: string = "Hello Angular";
+   currentDate: Date = new Date();
+   amount: number = 99.99;
+  
 }

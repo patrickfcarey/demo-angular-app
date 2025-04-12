@@ -9,6 +9,10 @@
     </div>
     <div class="right-side">
       <p>second test</p>
+      <p>Original Value : {{ value }}</p>
+      <p>Uppercase : {{ value | uppercase }}</p>
+      <p>Date: {{ currentDate | date:'medium'}}</p>
+      <p>Amount: {{ amount | currency : 'USD' : true}}</p>
     </div>
 
   </div>
