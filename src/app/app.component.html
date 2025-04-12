@@ -8,11 +8,17 @@
 
     </div>
     <div class="right-side">
-      <p>second test</p>
-      <p>Original Value : {{ value }}</p>
-      <p>Uppercase : {{ value | uppercase }}</p>
-      <p>Date: {{ currentDate | date:'medium'}}</p>
-      <p>Amount: {{ amount | currency : 'USD' : true}}</p>
+       <h2>Template Driven Form Example</h2>
+       <form (ngSubmit)="submitForm()">
+           <label for="name"> Name: </label>
+           <input type="text" id="name" name ="name" ngModel required>
+           
+           <label for="email">Email: </label>
+           <input type="email" id="email" name="email" ngModel required>
+
+           <button type="submit">Submit</button>
+           </label>
+       </form>
     </div>
 
   </div>
