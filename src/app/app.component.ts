@@ -12,14 +12,14 @@ import { FormBuilder, FormGroup, Validators,ReactiveFormsModule } from '@angular
 export class AppComponent implements OnInit{
   myForm: FormGroup = new FormGroup({});
   
-  constructor(private formBuilder: FormBuilder){
+  constructor(private formBuilder: FormBuilder){}
     ngOnInit(): void{
       this.myForm = this.formBuilder.group({
         name:['', Validators.required],
         email:['', [Validators.required,Validators.email]]
       })
     }
-  }
+  
   submitForm(){
     console.log("tear");
   }
